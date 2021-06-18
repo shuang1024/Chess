@@ -1,4 +1,6 @@
 import pygame
+import chess
+from board import *
 from constants import *
 from functions import *
 
@@ -11,6 +13,8 @@ def main():
 
     clock = pygame.time.Clock()
 
+    board = Board()
+
     while True:
         clock.tick(FPS)
         pygame.display.update()
@@ -22,7 +26,9 @@ def main():
 
         mouse_pos = pygame.mouse.get_pos()
 
-        display.fill(BLACK)        
+        display.fill(BLACK)
+
+        board.draw_board(display)
 
 
 main()
