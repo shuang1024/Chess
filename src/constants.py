@@ -1,7 +1,8 @@
 WIDTH, HEIGHT = 1280, 720
 FPS = 60
 
-DARK = (10, 10, 10)
-BRIGHT = (20, 200, 20)
+BLACK = (0, 0, 0)
+DARK = (50, 60, 50)
+BRIGHT = (90, 175, 90)
 
 SQ_SIZE = 125
