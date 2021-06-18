@@ -14,7 +14,7 @@ class Board:
                         pygame.draw.rect(display, DARK, (PADDING * row, PADDING * col, SQ_SIZE, SQ_SIZE))
                     else:
                         pygame.draw.rect(display, LIGHT, (PADDING * row, PADDING * col, SQ_SIZE, SQ_SIZE))
-                if row % 2 == 1:
+                elif row % 2 == 1:
                     if col % 2 == 0:
                         pygame.draw.rect(display, LIGHT, (PADDING * row, PADDING * col, SQ_SIZE, SQ_SIZE))
                     else:
