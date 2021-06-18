@@ -7,15 +7,15 @@ class Board:
         self.board = chess.Board()
 
     def draw_board(self, display):
-        for row in range(1, 9):
-            for col in range(1, 9):
+        for row in range(8):
+            for col in range(8):
                 if row % 2 == 0:
                     if col % 2 == 0:
-                        pygame.draw.rect(display, LIGHT, (PADDING * row, PADDING * col, SQ_SIZE, SQ_SIZE))
+                        pygame.draw.rect(display, LIGHT, (SQ_SIZE*row, SQ_SIZE*col, SQ_SIZE, SQ_SIZE))
                     else:
-                        pygame.draw.rect(display, DARK, (PADDING * row, PADDING * col, SQ_SIZE, SQ_SIZE))
+                        pygame.draw.rect(display, DARK, (SQ_SIZE*row, SQ_SIZE*col, SQ_SIZE, SQ_SIZE))
                 else:
                     if col % 2 == 0:
-                        pygame.draw.rect(display, DARK, (PADDING * row, PADDING * col, SQ_SIZE, SQ_SIZE))
+                        pygame.draw.rect(display, DARK, (SQ_SIZE*row, SQ_SIZE*col, SQ_SIZE, SQ_SIZE))
                     else:
-                        pygame.draw.rect(display, LIGHT, (PADDING * row, PADDING * col, SQ_SIZE, SQ_SIZE))
+                        pygame.draw.rect(display, LIGHT, (SQ_SIZE*row, SQ_SIZE*col, SQ_SIZE, SQ_SIZE))
