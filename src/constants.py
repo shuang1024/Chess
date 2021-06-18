@@ -6,3 +6,4 @@ DARK = (50, 60, 50)
 BRIGHT = (90, 175, 90)
 
 SQ_SIZE = 125
+PADDING = (HEIGHT - 8*SQ_SIZE) // 2
