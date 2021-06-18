@@ -22,7 +22,7 @@ def main():
 
         mouse_pos = pygame.mouse.get_pos()
 
-        display.fill(DARK)        
+        display.fill(BLACK)        
 
 
 main()
