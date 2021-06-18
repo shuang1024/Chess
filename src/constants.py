@@ -3,7 +3,7 @@ FPS = 60
 
 BLACK = (0, 0, 0)
 DARK = (50, 60, 50)
-BRIGHT = (90, 175, 90)
+LIGHT = (90, 175, 90)
 
 SQ_SIZE = 125
 PADDING = (HEIGHT - 8*SQ_SIZE) // 2
