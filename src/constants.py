@@ -5,8 +5,8 @@ WIDTH, HEIGHT = 800, 800
 FPS = 60
 
 BLACK = (0, 0, 0)
-DARK = (50, 50, 50)
-LIGHT = (80, 165, 80)
+DARK = (60, 45, 0)
+LIGHT = (225, 220, 150)
 
 SQ_SIZE = 100
 
