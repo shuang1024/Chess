@@ -29,6 +29,7 @@ def main():
         display.fill(BLACK)
 
         board.draw_board(display)
+        board.draw_pieces(display)
 
 
 main()
