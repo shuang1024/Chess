@@ -26,25 +26,25 @@ class Board:
             for col in range(8):
                 if l_board[row][col] == "P":
                     display.blit(pieces["pw"], (col*SQ_SIZE, row*SQ_SIZE))
-                if l_board[row][col] == "N":
+                elif l_board[row][col] == "N":
                     display.blit(pieces["nw"], (col*SQ_SIZE, row*SQ_SIZE))
-                if l_board[row][col] == "B":
+                elif l_board[row][col] == "B":
                     display.blit(pieces["bw"], (col*SQ_SIZE, row*SQ_SIZE))
-                if l_board[row][col] == "R":
+                elif l_board[row][col] == "R":
                     display.blit(pieces["rw"], (col*SQ_SIZE, row*SQ_SIZE))
-                if l_board[row][col] == "Q":
+                elif l_board[row][col] == "Q":
                     display.blit(pieces["qw"], (col*SQ_SIZE, row*SQ_SIZE))
-                if l_board[row][col] == "K":
+                elif l_board[row][col] == "K":
                     display.blit(pieces["kw"], (col*SQ_SIZE, row*SQ_SIZE))
-                if l_board[row][col] == "p":
+                elif l_board[row][col] == "p":
                     display.blit(pieces["pb"], (col*SQ_SIZE, row*SQ_SIZE))
-                if l_board[row][col] == "n":
+                elif l_board[row][col] == "n":
                     display.blit(pieces["nb"], (col*SQ_SIZE, row*SQ_SIZE))
-                if l_board[row][col] == "b":
+                elif l_board[row][col] == "b":
                     display.blit(pieces["bb"], (col*SQ_SIZE, row*SQ_SIZE))
-                if l_board[row][col] == "r":
+                elif l_board[row][col] == "r":
                     display.blit(pieces["rb"], (col*SQ_SIZE, row*SQ_SIZE))
-                if l_board[row][col] == "q":
+                elif l_board[row][col] == "q":
                     display.blit(pieces["qb"], (col*SQ_SIZE, row*SQ_SIZE))
-                if l_board[row][col] == "k":
+                elif l_board[row][col] == "k":
                     display.blit(pieces["kb"], (col*SQ_SIZE, row*SQ_SIZE))
