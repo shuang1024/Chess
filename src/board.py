@@ -24,27 +24,28 @@ class Board:
         l_board = str(self.board).split("\n")
         for row in range(8):
             for col in range(8):
-                if l_board[row][col] == "P":
-                    display.blit(pieces["pw"], (col*SQ_SIZE//2, row*SQ_SIZE))
-                elif l_board[row][col] == "N":
-                    display.blit(pieces["nw"], (col*SQ_SIZE//2, row*SQ_SIZE))
-                elif l_board[row][col] == "B":
-                    display.blit(pieces["bw"], (col*SQ_SIZE//2, row*SQ_SIZE))
-                elif l_board[row][col] == "R":
-                    display.blit(pieces["rw"], (col*SQ_SIZE//2, row*SQ_SIZE))
-                elif l_board[row][col] == "Q":
-                    display.blit(pieces["qw"], (col*SQ_SIZE//2, row*SQ_SIZE))
-                elif l_board[row][col] == "K":
-                    display.blit(pieces["kw"], (col*SQ_SIZE//2, row*SQ_SIZE))
-                elif l_board[row][col] == "p":
-                    display.blit(pieces["pb"], (col*SQ_SIZE//2, row*SQ_SIZE))
-                elif l_board[row][col] == "n":
-                    display.blit(pieces["nb"], (col*SQ_SIZE//2, row*SQ_SIZE))
-                elif l_board[row][col] == "b":
-                    display.blit(pieces["bb"], (col*SQ_SIZE//2, row*SQ_SIZE))
-                elif l_board[row][col] == "r":
-                    display.blit(pieces["rb"], (col*SQ_SIZE//2, row*SQ_SIZE))
-                elif l_board[row][col] == "q":
-                    display.blit(pieces["qb"], (col*SQ_SIZE//2, row*SQ_SIZE))
-                elif l_board[row][col] == "k":
-                    display.blit(pieces["kb"], (col*SQ_SIZE//2, row*SQ_SIZE))
+                board_row = l_board[row].replace(" ", "")
+                if board_row[col] == "P":
+                    display.blit(pieces["pw"], (col*SQ_SIZE, row*SQ_SIZE))
+                elif board_row[col] == "N":
+                    display.blit(pieces["nw"], (col*SQ_SIZE, row*SQ_SIZE))
+                elif board_row[col] == "B":
+                    display.blit(pieces["bw"], (col*SQ_SIZE, row*SQ_SIZE))
+                elif board_row[col] == "R":
+                    display.blit(pieces["rw"], (col*SQ_SIZE, row*SQ_SIZE))
+                elif board_row[col] == "Q":
+                    display.blit(pieces["qw"], (col*SQ_SIZE, row*SQ_SIZE))
+                elif board_row[col] == "K":
+                    display.blit(pieces["kw"], (col*SQ_SIZE, row*SQ_SIZE))
+                elif board_row[col] == "p":
+                    display.blit(pieces["pb"], (col*SQ_SIZE, row*SQ_SIZE))
+                elif board_row[col] == "n":
+                    display.blit(pieces["nb"], (col*SQ_SIZE, row*SQ_SIZE))
+                elif board_row[col] == "b":
+                    display.blit(pieces["bb"], (col*SQ_SIZE, row*SQ_SIZE))
+                elif board_row[col] == "r":
+                    display.blit(pieces["rb"], (col*SQ_SIZE, row*SQ_SIZE))
+                elif board_row[col] == "q":
+                    display.blit(pieces["qb"], (col*SQ_SIZE, row*SQ_SIZE))
+                elif board_row[col] == "k":
+                    display.blit(pieces["kb"], (col*SQ_SIZE, row*SQ_SIZE))
