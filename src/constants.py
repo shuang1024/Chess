@@ -14,5 +14,5 @@ pieces = {}
 
 for f in ("p", "n", "b", "r", "q", "k"):
     for l in ("w", "b"):
-        img = pygame.transform.scale(pygame.image.load(os.path.join("src", "img/" + f + l + ".png")), (SQ_SIZE, SQ_SIZE))
+        img = pygame.transform.scale(pygame.image.load(os.path.join("src", os.path.join("img", f + l + ".png")), (SQ_SIZE, SQ_SIZE))
         pieces[f + l] = img
