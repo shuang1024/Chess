@@ -21,10 +21,10 @@ class Board:
                         pygame.draw.rect(display, LIGHT, (SQ_SIZE*row, SQ_SIZE*col, SQ_SIZE, SQ_SIZE))
                         
     def draw_pieces(self, display):
-        l_board = str(self.board).split("\n")
+        self.l_board = str(self.board).split("\n")
         for row in range(8):
             for col in range(8):
-                board_row = l_board[row].replace(" ", "")
+                board_row = self.l_board[row].replace(" ", "")
                 if board_row[col] == "P":
                     display.blit(pieces["pw"], (col*SQ_SIZE, row*SQ_SIZE))
                 elif board_row[col] == "N":
