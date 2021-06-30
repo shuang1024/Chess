@@ -6,6 +6,9 @@ class Board:
     def __init__(self):
         self.board = chess.Board()
 
+    def move(self, move):
+        self.board.push_san(move)
+
     def draw_board(self, display):
         for row in range(8):
             for col in range(8):
