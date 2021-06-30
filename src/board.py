@@ -7,7 +7,7 @@ class Board:
         self.board = chess.Board()
 
     def move(self, move):
-        self.board.push_san(move)
+        self.board.push_uci(move)
 
     def draw_board(self, display):
         for row in range(8):
